@@ -1,15 +1,15 @@
-function multiplier (num1) {
-    return function (num2) {
-        return num1 * num2;
+// function multiplier (num1) {
+//     return function (num2) {
+//         return num1 * num2;
 
-    }
-}
+//     }
+// }
 
-const double = multiplier(2);
-const triple = multiplier(3);
+// const double = multiplier(2);
+// const triple = multiplier(3);
 
-console.log(double(10))
-console.log(double(5)
+// console.log(double(10))
+// console.log(double(5)
 
 //2
 
@@ -25,4 +25,4 @@ console.log(double(5)
 //     console.log(lotS("0"));
 // } catch (err) {
 //     console.error("Поймали ошибку:", err.message);
-}
+// }

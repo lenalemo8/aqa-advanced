@@ -32,3 +32,6 @@ function handleOdd(num) {
 
 
 handleNum(15, handleEven, handleOdd);
+
+
+//if (num % 2 === 0) //перевірка на парність
