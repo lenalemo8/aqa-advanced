@@ -6,21 +6,14 @@
  */
 
 function isAdult(age) {
-    if (age >= 18)
-        return true
-    else return false
+	if (age >= 18) return true;
+	else return false;
 }
 
 let person1isAdult = isAdult(25);
-if (person1isAdult)
-    console.log('The person is an adult');
-else
-    console.log('The person is not an adult');
+if (person1isAdult) console.log('The person is an adult');
+else console.log('The person is not an adult');
 
 let person2isAdult = isAdult(15);
-if (person2isAdult)
-    console.log('The person is an adult');
-else
-    console.log('The person is not an adult');
-
-
+if (person2isAdult) console.log('The person is an adult');
+else console.log('The person is not an adult');

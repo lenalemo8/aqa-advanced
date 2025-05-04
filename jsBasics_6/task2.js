@@ -8,11 +8,10 @@
  * Виведіть деструктуризовані змінні в консоль
  */
 
-
 const book = {
-    title: 'The Mountain is You',
-    author: 'Brianna Wiest',
-    year: '2020'
+	title: 'The Mountain is You',
+	author: 'Brianna Wiest',
+	year: '2020',
 };
 
 const { title, author } = book;

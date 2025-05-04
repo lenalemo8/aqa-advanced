@@ -16,7 +16,7 @@
 // function lotS (b) {
 //     if (b === "0") {
 //         throw new Error("Some error");
-           
+
 //     }
 //     return true
 // }

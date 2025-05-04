@@ -9,12 +9,9 @@
  */
 
 function treatNum(num) {
-    console.log(num);
-    if (num <= 0 ) 
-        return;
-    treatNum(num - 1); 
-    
+	console.log(num);
+	if (num <= 0) return;
+	treatNum(num - 1);
 }
 
 treatNum(5);
-

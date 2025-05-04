@@ -9,29 +9,25 @@
  * Викличте функцію handleNum і передайте в якості аргументів довільне число і дві функції які ви створили раніше
  */
 
-
 function handleNum(number, callbackEvenNum, callbackOddNum) {
-    if (typeof number !== 'number') {
-        throw new Error("Parameter is not a number!");
-    }
-    if (number % 2 === 0) {
-        callbackEvenNum(number);
-    } else {
-        callbackOddNum(number);
-    }
+	if (typeof number !== 'number') {
+		throw new Error('Parameter is not a number!');
+	}
+	if (number % 2 === 0) {
+		callbackEvenNum(number);
+	} else {
+		callbackOddNum(number);
+	}
 }
 
-
 function handleEven(num) {
-    console.log("Number is even!")
+	console.log('Number is even!');
 }
 
 function handleOdd(num) {
-    console.log("Number is odd!")
+	console.log('Number is odd!');
 }
 
-
 handleNum(15, handleEven, handleOdd);
-
 
 //if (num % 2 === 0) //перевірка на парність

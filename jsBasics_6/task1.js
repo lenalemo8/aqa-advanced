@@ -9,23 +9,19 @@
  * Виведіть об'єкт student в консоль.
  */
 
+const student = {};
+student.firstName = 'Alex';
+student.lastName = 'Kharly';
+student.age = 19;
+student.courses = ['Mathematics', 'History', 'Programming'];
 
-    const student = {};
-    student.firstName = 'Alex';
-    student.lastName = 'Kharly';
-    student.age = 19;
-    student.courses = ['Mathematics', 'History','Programming'];
+console.log(student);
 
-    console.log(student);
+// const student = {
+//     firstName: 'Alex',
+//     lastName: 'Kharly',
+//     age: 19,
+//     courses: ['Mathematics', 'History','Programming']
+// };
 
-
- 
-    // const student = {
-    //     firstName: 'Alex',
-    //     lastName: 'Kharly',
-    //     age: 19,
-    //     courses: ['Mathematics', 'History','Programming']
-    // };
- 
-    // console.log(student);
-
+// console.log(student);
