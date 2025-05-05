@@ -17,71 +17,63 @@
  */
 
 export class Book {
-    constructor(title, author, year) {
-        this.title = title;
-        this.author = author;
-        this.year = year;
-    }
+	constructor(title, author, year) {
+		this.title = title;
+		this.author = author;
+		this.year = year;
+	}
 
+	static getOldestBook(books) {
+		if (books.length === 0) {
+			return null;
+		}
+		let oldestBook = books[0];
+		for (let i = 1; i < books.length; i++) {
+			if (books[i].year < oldestBook.year) {
+				oldestBook = books[i];
+			}
+		}
+		return oldestBook;
+	}
 
-    static getOldestBook(books) {
-        if (books.length === 0) {
-            return null;
-        }
-        let oldestBook = books[0];
-        for (let i = 1; i < books.length; i++) {
-            if (books[i].year < oldestBook.year) {
-                oldestBook = books[i];
-            }
-        }
-        return oldestBook; 
-    }
+	printInfo() {
+		console.log(`=========================`);
+		console.log(`Title: ${this.title}`);
+		console.log(`Author: ${this.author}`);
+		console.log(`Year: ${this.year}`);
+	}
 
+	set title(value) {
+		if (value.length < 3) {
+			console.log('The book title is too short.');
+		} else {
+			this._title = value;
+		}
+	}
 
-    printInfo() {
-        console.log(`=========================`);
-        console.log(`Title: ${this.title}`);
-        console.log(`Author: ${this.author}`);
-        console.log(`Year: ${this.year}`);
-    }
+	get title() {
+		return this._title;
+	}
 
-    set title(value) {
-        if (value.length < 3) {
-            console.log('The book title is too short.');
-        }
-        else {
-            this._title = value;
-        }
-    }
+	set author(value) {
+		if (typeof value === 'string') {
+			this._author = value.charAt(0).toUpperCase() + value.slice(1);
+		} else this._author = 'Anonimus';
+	}
 
-    get title() {
-        return this._title;
-    }
+	get author() {
+		return this._author;
+	}
+	set year(value) {
+		if (value > 2025) {
+			console.log('Incorrect value for year');
+		} else this._year = value;
+	}
 
-    set author(value) {
-        if (typeof value === "string") {
-            this._author = value.charAt(0).toUpperCase() + value.slice(1)
-        }
-        else this._author = "Anonimus";
-    }
-
-    get author() {
-        return this._author;
-    }
-    set year(value) {
-        if (value > 2025) {
-            console.log('Incorrect value for year');
-        }
-        else this._year = value
-    }
-
-    get year() {
-        return this._year;
-    }
+	get year() {
+		return this._year;
+	}
 }
-
-
-
 
 // const book1 = new Book('The Mountain is You', 'Brianna Wiest', 2020);
 // const book2 = new Book('Atomic Habits', 'James Clear ', 2018);
@@ -93,6 +85,3 @@ export class Book {
 
 // module.exports = Book;
 //console.log(book2);
-
-
-

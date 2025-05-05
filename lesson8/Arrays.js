@@ -10,7 +10,6 @@
 
 // const firstElement = nameList[0];
 
-
 /**const namesList = ['John','Alex','Olga'];
 
 for (let i = 0; i , namesList.length; i++) {
@@ -31,4 +30,3 @@ for (const name of namesList) {
 //push - додає в кінець елемент
 //unshift - додає спочатку
 // shift - видаляє  спочатку
-

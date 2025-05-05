@@ -1,4 +1,3 @@
-
 /**
  1* Sum all the numbers of a given array (cq.list), except the highest the lowest element (by value, not by index!).
 The*  highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
@@ -16,17 +15,16 @@ If an empty value (null, None, Nothing etc.) is given instead of an Array, or th
 Якщо замість масиву вказано порожнє значення (null, None, Nothing тощо), або заданий масив є порожнім списком або списком лише з 1 елементом, поверніть 0.
 */
 
+function sumResult(array) {
+	if (!Array.isArray(array) || array.length < 2) return 0;
 
-    function sumResult (array) {
-        if (!Array.isArray(array) || array.length <2) return 0;
+	const minValue = Math.min(...array);
+	const maxValue = Math.max(...array);
 
-        const minValue = Math.min(...array);
-        const maxValue = Math.max(...array);
-        
-        return array.reduce((sum, num) => sum + num, 0) - minValue - maxValue
-    }
+	return array.reduce((sum, num) => sum + num, 0) - minValue - maxValue;
+}
 
-    let cqList1 = [6,2,18,1,10];
-    let cqList2 = [1,1,11,2,3];
-    console.log(sumResult(cqList1));
-    console.log(sumResult(cqList2));
+let cqList1 = [6, 2, 18, 1, 10];
+let cqList2 = [1, 1, 11, 2, 3];
+console.log(sumResult(cqList1));
+console.log(sumResult(cqList2));

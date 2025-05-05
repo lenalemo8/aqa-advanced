@@ -14,5 +14,5 @@ const myArray = [...numbersList];
 
 myArray.sort((a, b) => a - b);
 
-console.log("Оригінальний масив:", numbersList);
-console.log("Відсортований масив:", myArray);
+console.log('Оригінальний масив:', numbersList);
+console.log('Відсортований масив:', myArray);

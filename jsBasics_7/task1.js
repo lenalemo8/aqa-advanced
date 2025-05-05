@@ -9,7 +9,7 @@ const book3 = new Book('Untamed', 'glennon Doyle', 2019);
 const myBook = new Ebook('Daring Greatly', 'Brene Brown', 2012, 'EPUB');
 
 const books = [book1, book2, book3, myBook];
-// Виклик методів 
+// Виклик методів
 
 book1.printInfo();
 book2.printInfo();
@@ -19,15 +19,15 @@ myBook.printInfo();
 const oldestBook = Book.getOldestBook(books);
 
 if (oldestBook) {
-    console.log('###################################');
-    console.log('The oldest book from the list:');
-    oldestBook.printInfo();
-    console.log('###################################');
+	console.log('###################################');
+	console.log('The oldest book from the list:');
+	oldestBook.printInfo();
+	console.log('###################################');
 } else {
-    console.log('No books in the list');
+	console.log('No books in the list');
 }
 
-// Зміна через set 
+// Зміна через set
 
 book1.author = 'camila Cors';
 myBook.fileFormat = 'PDF';
@@ -38,9 +38,6 @@ myBook.printInfo();
 console.log('Create Ebook from Book');
 const newEbook = Ebook.createEBookFromBook(book1, '****');
 newEbook.printInfo();
-
-
-
 
 // const myBook = new Ebook('Daring Greatly', 'Brene Brown', '2012','EPUB');
 // myBook.printInfo();

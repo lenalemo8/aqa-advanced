@@ -3,17 +3,17 @@
 // for:
 let number = 7;
 for (let multiplier = 1; multiplier <= 10; multiplier++) {
-    let res = number * multiplier;
-    console.log(`${number} * ${multiplier} = ${res}`)
+	let res = number * multiplier;
+	console.log(`${number} * ${multiplier} = ${res}`);
 }
 
 console.log('------------------------');
 
 // do while:
 
-let multiplier = 1
+let multiplier = 1;
 do {
-    let res = number * multiplier;
-    console.log(`${number} * ${multiplier} = ${res}`);
-    multiplier++;
+	let res = number * multiplier;
+	console.log(`${number} * ${multiplier} = ${res}`);
+	multiplier++;
 } while (multiplier <= 10);

@@ -1,4 +1,3 @@
-
 // function startProgram() {
 //     console.log('Start program')
 // }
@@ -12,7 +11,6 @@
 //     console.log('Asyng operation is done');
 // }, 0);
 // finishProgram();
-
 
 // const getNumber = new Promise((resolve, reject) => {
 //     setTimeout(() => {
@@ -34,7 +32,6 @@
 //     .catch((error) => console.error('Result is not successful:' + error));
 
 //     .finally(() => console.log('Finally'));
-
 
 // function createNewPromiseWithDelay(value, delay) {
 //     return new Promise((resolve, reject) => {
@@ -58,10 +55,6 @@
 //     .then(results => console.log('All results: ' + results))
 //     .catch(error => console.log(error));
 
-
-
-
 function getPostById(postId) {
-    return fetch (`url/${postId}`);
-
+	return fetch(`url/${postId}`);
 }

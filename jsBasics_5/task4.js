@@ -12,5 +12,5 @@
 
 const myArray = [10, 20, 30, 40, 50];
 
-const newArray = myArray.filter(el => el % 2 === 0);
+const newArray = myArray.filter((el) => el % 2 === 0);
 console.log(myArray);

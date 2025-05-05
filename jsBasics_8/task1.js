@@ -6,11 +6,10 @@
 через вказану кількість мілісекунд
  */
 
-
-function arbitraryText (text, milliseconds) {
-    setTimeout (() => {
-        console.log(text);
-    }, milliseconds);
+function arbitraryText(text, milliseconds) {
+	setTimeout(() => {
+		console.log(text);
+	}, milliseconds);
 }
 
 arbitraryText('Informational text displayed:', 1000);

@@ -10,9 +10,7 @@
  * Виведіть новий масив на консоль.
  */
 
-
 const myArray = [1, 2, 3, 4, 5];
 
 const newArray = myArray.map((el, index) => el * index);
-console.log(newArray)
-
+console.log(newArray);

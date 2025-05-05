@@ -11,5 +11,3 @@ console.log(students);
 console.log(courseGroup);
 console.log(certificates);
 console.log(nameStudent);
-
-
